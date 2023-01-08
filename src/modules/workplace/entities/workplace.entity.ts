@@ -1,4 +1,5 @@
-import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm';
+import { Project } from 'src/modules/project/entities/project.entity';
+import { Column, CreateDateColumn, Entity, OneToMany, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm';
 
 @Entity('workplace')
 export class Workplace {
@@ -14,4 +15,7 @@ export class Workplace {
   updatedDate?: Date;
   @Column({ type: String, length: 1000, nullable: true })
   description?: string;
+
+  @OneToMany((type) => Project, (t) => t.workplace, { orphanedRowAction: 'delete' })
+  projects: Project[];
 }

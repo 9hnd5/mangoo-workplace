@@ -4326,16 +4326,18 @@ makeerror@1.0.12:
   dependencies:
     tmpl "1.0.5"
 
-mangoo-core@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/mangoo-core/-/mangoo-core-0.0.5.tgz#37e0e332451e5346fb301d0d4aef3a482df8e314"
-  integrity sha512-4CP/XkLai0DY6y63Ob30HHEVNLdzMBNV0yeRa2ivXVpNmHKCcSKMfZsKxwwLpJgSUJKGzzs5qe9ep08R3VmaRg==
+mangoo-core@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/mangoo-core/-/mangoo-core-1.0.0.tgz#ef4dd096bbf3566e0cbef60073d960614cdff804"
+  integrity sha512-NKuMpPBSFvWhzR4cXOfi7RJZ+32pc18gqBGfhh8Um0RcT94g3SaR3RsjdToYAsWcOOcJZ/SXsf8u1hBzkminiQ==
   dependencies:
     "@nestjs/common" "^9.0.0"
     "@nestjs/core" "^9.0.0"
     "@nestjs/cqrs" "^9.0.1"
     "@nestjs/platform-express" "^9.0.0"
     axios "^1.2.1"
+    class-transformer "^0.5.1"
+    class-validator "^0.14.0"
     reflect-metadata "^0.1.13"
     rimraf "^3.0.2"
     rxjs "^7.2.0"
